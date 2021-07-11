@@ -9,6 +9,7 @@ import {
 import {useDispatch, useSelector} from "react-redux"
 import {useHistory} from "react-router-dom"
  
+import HoverVideoPlayer from 'react-hover-video-player';
 
 
 function Header() {
@@ -86,6 +87,7 @@ function Header() {
                    </span>
                </a>
                <a> 
+                   
                    <img src="/images/search-icon.svg"/>
                    <span>
                        SEARCH
@@ -148,6 +150,7 @@ function Header() {
  
  )
 }
+
 
 
 export default Header
@@ -249,7 +252,9 @@ const Nav = styled.nav`
      padding: 0 12px;
      cursor: pointer;
      img {
-         height: 50px;
+        height : 60px;
+         border-radius : 50%;
+         padding: 15px;
      }
 
 //   span{
